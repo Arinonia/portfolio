@@ -5,12 +5,14 @@ import { getProject } from "@/lib/projects";
 import Link from "next/link";
 import { ChevronLeftIcon } from "@heroicons/react/16/solid";
 
-interface Props {
-  params: { id: string };
-  searchParams?: { [key: string]: string | string[] | undefined };
-}
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = params;
+type PageProps = {
+  params: Promise<{ id: string }>;
+};
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { id } = await params;
   const project = await getProject(id);
 
   if (!project) {
@@ -25,8 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function ProjectPage({ params }: Props) {
-  const { id } = params;
+export default async function ProjectPage({ params }: PageProps) {
+  const { id } = await params;
   const project = await getProject(id);
 
   if (!project) {
