@@ -10,7 +10,7 @@ interface Props {
   searchParams?: { [key: string]: string | string[] | undefined };
 }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = await params;
+  const { id } = params;
   const project = await getProject(id);
 
   if (!project) {
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ProjectPage({ params }: Props) {
-  const { id } = await params;
+  const { id } = params;
   const project = await getProject(id);
 
   if (!project) {
