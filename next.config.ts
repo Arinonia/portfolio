@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   output: "standalone",
   images: {
     domains: ["placehold.co"],
+    unoptimized: true,
   },
 };
 
