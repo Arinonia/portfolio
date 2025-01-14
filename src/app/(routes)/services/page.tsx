@@ -46,7 +46,8 @@ export default async function ServicesPage() {
               </div>
               <h3 className="font-semibold">Développement</h3>
               <p className="text-text-secondary">
-                Réalisation du projet avec des points réguliers sur l'avancement
+                Réalisation du projet avec des points réguliers sur
+                l&apos;avancement
               </p>
             </div>
             <div className="space-y-4">

@@ -11,8 +11,8 @@ export default async function HomePage() {
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl font-bold mb-6">Développeur Full Stack</h1>
           <p className="text-text-secondary text-lg mb-8">
-            Spécialisé dans le développement d'applications modernes avec Rust,
-            Go et Java
+            Spécialisé dans le développement d&apos;applications modernes avec
+            Rust, Go et Java
           </p>
           <div className="flex justify-center gap-4">
             <Link

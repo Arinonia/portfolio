@@ -1,9 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import { Project } from "@/types";
 import { getProject } from "@/lib/projects";
-import { hr } from "framer-motion/client";
 import Link from "next/link";
 import { ChevronLeftIcon } from "@heroicons/react/16/solid";
 

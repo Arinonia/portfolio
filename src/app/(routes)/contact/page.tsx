@@ -8,8 +8,8 @@ export default function ContactPage() {
         <header className="mb-12 text-center">
           <h1 className="text-4xl font-bold mb-4">Contact</h1>
           <p className="text-text-secondary max-w-2xl mx-auto">
-            Une idée de projet ? Besoin d'un développeur ? N'hésitez pas à me
-            contacter pour en discuter.
+            Une idée de projet ? Besoin d&apos;un développeur ? N&apos;hésitez
+            pas à me contacter pour en discuter.
           </p>
         </header>
 
