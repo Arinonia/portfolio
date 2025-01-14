@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio-frontend
+    restart: unless-stopped
+    networks:
+      - proxy-network
+    ports:
+      - "3000:3000"
+
+networks:
+  proxy-network:
+    external: true
+    name: proxy-network
