@@ -9,6 +9,8 @@ services:
       - proxy-network
     ports:
       - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_BASE_URL=http://185.229.220.75:3001
 
 networks:
   proxy-network:
